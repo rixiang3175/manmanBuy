@@ -1,0 +1,80 @@
+.mm-main {
+  /*导航*/
+  /*更多*/
+}
+.mm-main .mm-nav {
+  margin-top: .1rem;
+}
+.mm-main .mm-nav ul {
+  overflow: hidden;
+}
+.mm-main .mm-nav ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  font-size: .16rem;
+  padding: .1rem;
+}
+.mm-main .mm-nav ul li img {
+  width: 80%;
+}
+.mm-main .mm-nav .item-display {
+  display: none;
+}
+.mm-main .recommend {
+  height: .7rem;
+  background: palevioletred;
+  padding: .1rem .15rem;
+  line-height: .5rem;
+  font-size: .2rem;
+}
+.mm-main .recommend img {
+  margin-top: .05rem;
+  height: .4rem;
+  width: .4rem;
+}
+.mm-main .pro-item ul li {
+  width: 100%;
+  overflow: hidden;
+  padding: .2rem 0;
+  border-bottom: 1px solid #ccc;
+}
+.mm-main .pro-item ul li a {
+  display: block;
+}
+.mm-main .pro-item ul li a p {
+  margin-bottom: 1.3rem;
+}
+.mm-main .pro-item ul li a img {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+.mm-main .pro-item ul li a .item-info {
+  font-size: .2rem;
+  width: 3.6rem;
+  height: 100%;
+}
+.mm-main .pro-item ul li a .item-info .price {
+  color: palevioletred;
+}
+.mm-main .pro-item ul li a .item-info .time,
+.mm-main .pro-item ul li a .item-info .pro-name {
+  color: #999;
+}
+.mm-main .pro-item ul li a .item-info .num {
+  color: #999;
+}
+.mm-main .item-more {
+  height: .7rem;
+  padding: .2rem .3rem;
+  margin-bottom: .2rem;
+}
+.mm-main .item-more a {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+  font-size: .2rem;
+  color: black;
+  line-height: .5rem;
+  text-align: center;
+}

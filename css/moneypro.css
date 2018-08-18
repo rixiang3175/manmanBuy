@@ -1,0 +1,153 @@
+.mm-layout .mm-head {
+  padding: 0;
+  position: relative;
+}
+.mm-layout .mm-head .back-icon::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: .25rem;
+  top: .25rem;
+  width: .4rem;
+  height: .4rem;
+  border-top: .03rem solid #fff;
+  border-left: .03rem solid #fff;
+  transform: rotate(-45deg);
+}
+.mm-layout .mm-head .go-back {
+  height: 100%;
+  width: .88rem;
+}
+.mm-layout .mm-head .go-back a {
+  display: block;
+  height: 1rem;
+}
+.mm-layout .mm-head h1 {
+  overflow: hidden;
+  font-size: .3rem;
+  text-align: center;
+  color: #fff;
+}
+.mm-layout .mm-head .app {
+  margin-top: .14rem;
+}
+.mm-layout .mm-main {
+  padding: .1 .2rem;
+  /*前往购买 */
+}
+.mm-layout .mm-main h3 {
+  padding: .2rem .1rem;
+  font-size: .3rem;
+}
+.mm-layout .mm-main .infor {
+  font-size: .22rem;
+  color: #666;
+}
+.mm-layout .mm-main #pro-des {
+  padding: .1rem 0;
+}
+.mm-layout .mm-main #pro-des #pro-des1 .f-img {
+  height: 2rem;
+  width: 2rem;
+}
+.mm-layout .mm-main #pro-des p {
+  font-size: .24rem;
+  line-height: .4rem;
+}
+.mm-layout .mm-main .pro-dec p {
+  padding: .1rem 0;
+  font-size: .24rem;
+  line-height: .4rem;
+}
+.mm-layout .mm-main #bigImg #bigImg1 img {
+  height: 6.2rem;
+  width: 6.2rem;
+}
+.mm-layout .mm-main #pro-area #pro-area1 {
+  width: 2.5rem;
+  margin: 0 auto;
+  margin-top: .4rem;
+}
+.mm-layout .mm-main #pro-area #pro-area1 #disstorck li {
+  border-bottom: 2px dashed #ccc;
+  padding: 0 .2rem;
+}
+.mm-layout .mm-main #pro-area #pro-area1 #disstorck li a {
+  font-size: .22rem;
+  color: #eee;
+}
+.mm-layout .mm-main #pro-area #pro-area1 #disstorck li a span {
+  position: relative;
+  color: #666;
+  text-align: left;
+}
+.mm-layout .mm-main #pro-area #pro-area1 #disstorck li a span strong {
+  margin-left: .3rem;
+  float: right;
+  color: palevioletred;
+  text-align: left;
+  font-weight: normal;
+}
+.mm-layout .mm-main .pro-buy {
+  margin-top: .3rem;
+  height: .6rem;
+  text-align: center;
+  border-radius: .05rem;
+  background: palevioletred;
+  font-size: .24rem;
+  line-height: .6rem;
+  margin-bottom: .3rem;
+}
+.mm-layout .mm-main .pro-buy a {
+  color: #fff;
+}
+.com-list .cu-content-pl div.tit {
+  height: .72rem;
+  padding: .1rem .1rem;
+  font-size: .24rem;
+  line-height: .52rem;
+}
+.com-list .cu-content-pl .form {
+  position: relative;
+}
+.com-list .cu-content-pl .form textarea {
+  height: 2.58rem;
+  width: 100%;
+}
+.com-list .cu-content-pl .form .tjdp {
+  height: .78rem;
+  width: 2rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: rebeccapurple;
+  font-size: .22rem;
+  color: #fff;
+}
+.com-list .cu-content-pl .list .ui-border-b {
+  padding: .2rem;
+}
+.com-list .cu-content-pl .list .ui-border-b .userimg img {
+  height: .8rem;
+  width: .8rem;
+  border-radius: .05rem;
+  float: left;
+}
+.com-list .cu-content-pl .list .ui-border-b .con {
+  overflow: hidden;
+  padding-left: .2rem;
+}
+.com-list .cu-content-pl .list .ui-border-b .con .username {
+  float: left;
+  font-size: .22rem;
+  color: royalblue;
+}
+.com-list .cu-content-pl .list .ui-border-b .con .time {
+  float: right ;
+  font-size: .24rem;
+  color: #ccc;
+}
+.com-list .cu-content-pl .list .ui-border-b .con .content {
+  font-size: .28rem;
+  color: #666;
+}

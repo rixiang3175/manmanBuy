@@ -1,0 +1,122 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/gsproduct.css">
+    <title>凑单品</title>
+  </head>
+  
+  <body>
+    <div class="mm-layout">
+      <!-- 头部 -->
+      <div class="mm-head clearfix">
+        <div class="go-back fl">
+          <a class="back-icon" href="index.html"></a>
+        </div>
+        <div class="app fr">
+          <img src="./images/header_app.png" alt="">
+        </div>
+        <h1>凑单品</h1>
+      </div>
+  
+      <!-- 主体 -->
+      <div class="mm-main">
+           <div class="nav">
+              <ul class="clearfix">
+                  <!-- 导航坑 -->
+                  <li class="link link1">
+                    1号店
+                  </li>
+                  <li class="link link2">
+                    华北
+                  </li>
+                  <li class="link link3">
+                    全部价格
+                  </li>
+                </ul>
+           </div>
+           <!-- 二级菜单 -->
+           <div class="child one">
+             <ul>
+               <!-- keng -->
+            </ul>
+           </div>
+           <div class="child two">
+             <ul>
+              <!-- keng -->
+              </ul>
+           </div>
+           <div class="child three">
+             <ul>
+                <li>全部价格</li>
+              </ul>
+           </div>
+
+           <div class="content">
+              <ul>
+                <!-- 坑 -->
+              </ul>
+           </div>
+
+       </div>
+      <!-- 底部 -->
+      <div class="mm-footer">
+        <div class="login">
+          <a href="javascript:;">登录</a>
+          <a href="javascript:;">注册</a>
+          <a href="#" class="j-top">
+            <img src="./images/top.jpg" alt=""> 返回头部</a>
+        </div>
+        <div class="link">
+          <a href="javascript:;" class="link-app">手机App下载</a>
+          <a href="index.html" class="link-phone">慢慢买手机版</a>
+          <a href="javascript:;"> --掌上比价平台</a>
+          <p class="link-com">m.manmanbuy.com</p>
+        </div>
+        <a href="#" class="fix"></a>
+      </div>
+      <script src="./js/jquery.min.js"></script>
+      <script src="./lib/artTemplate/template-web.js"></script>
+      <script src="js/common/Tools.js"></script>
+      <script src="js/common/Route.js"></script>
+      <script src="./js/common/commmon.js"></script>
+      <script src="js/rem.js"></script>
+      <script src="./js/gsproduct.js"></script>
+      <!-- 渲染1 -->
+      <script type="text/html" id="tmp">
+        {{ each result v i}}
+          <li class="link" data-shopId="{{v.shopId}}">
+              {{ v.shopName}}
+          </li>
+        {{ /each}}
+      </script>
+      
+
+    <!-- 渲染2 -->
+    <script type="text/html" id="tmp1">
+    {{ each result v i}}
+      <li class="link" data-areaId="{{v.areaId}}">
+          {{ v.areaName}}
+      </li>
+    {{ /each}}
+  </script>
+  <!-- 渲染商品 -->
+  <script type="text/html" id="tmp2">
+    {{ each result v i}}
+      <li >
+        <a href="#">
+          <img src="{{v.productImg}}" alt="">
+          <p class="name">{{v.productName}}</p>
+          <p>
+            <span class="price">{{v.productPrice}}</span>
+            <span class="pro fr">去凑单</span>
+          </p>
+        </a>
+      </li>
+    {{ /each}}
+  </script>
+  </body>
+  </html>
+ 

@@ -1,0 +1,100 @@
+.mm-layout {
+  .mm-head {
+    padding: 0;
+    position: relative;
+    .back-icon::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      left: .25rem;
+      top: .25rem;
+      width: .4rem;
+      height: .4rem;
+      border-top: .03rem solid #fff;
+      border-left: .03rem solid #fff;
+      transform: rotate(-45deg)
+    }
+    .go-back {
+        height: 100%;
+        width: .88rem;
+        a {
+          display: block;
+          height: 1rem;
+        }
+    }
+    h1 {
+      overflow: hidden;
+      font-size: .3rem;
+      text-align: center;
+      color: #fff;
+    }
+    .app {
+      margin-top: .14rem;
+    }
+  }
+  .mm-main {
+    .pro-item {
+      ul {
+        li {
+          width: 100%;
+          // overflow: hidden;
+          padding: .2rem 0;
+          border-bottom: 1px solid #ccc;
+          a {
+            display: block;
+            p {
+              margin-bottom : 1.3rem;
+            }
+            img {
+             height: 2.2rem;
+             width: 2.2rem;
+           }
+           .item-info {
+             font-size: .2rem;
+             width: 4rem; 
+             height: 2.2rem;
+             .price {
+               color: palevioletred;
+             }
+             .time,
+             .pro-name {
+               color: #999;
+            } 
+            .num {
+             color: #999;
+            }
+          }
+        }
+      }
+    }
+   }
+   .pro-page {
+    margin-top:.15rem;
+    height: .66rem;
+    span {
+      float: left;
+      height: 100%;
+      width: 33.33%;
+      line-height: .66rem;
+      text-align: center;
+      a {
+        float: left;
+       background: #eee;
+       border-radius: .03rem;
+       height: .66rem;
+       border-radius: .05rem;
+       width: 1.44rem;
+       font-size: .3rem;
+       margin-left: .4rem;
+      }
+      select {
+        font-size: .28rem;
+        width: 1.5rem;
+        text-align: center;
+        height: .66rem;
+        padding: .18rem;
+      }
+    }
+  }
+  }
+}

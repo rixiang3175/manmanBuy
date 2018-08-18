@@ -1,0 +1,135 @@
+.mm-main {
+  /*商品详情*/
+  /**/
+}
+.mm-main .nav-list {
+  height: .76rem;
+  padding-left: .2rem;
+  background-image: linear-gradient(to bottom, #eee, #ddd);
+  font-size: .26rem;
+  line-height: .76rem;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.mm-main .nav-list .select {
+  margin-top: .03rem;
+  background: #ccc;
+  border-radius: .2rem;
+  display: block;
+  width: 1.2rem;
+  height: .68rem;
+  text-align: center;
+}
+.mm-main .product-bijia {
+  padding: .4rem 0;
+  width: 100%;
+  text-align: center;
+}
+.mm-main .product-bijia .pro-dec {
+  font-size: .28rem;
+  color: #666;
+  height: 4rem;
+  display: block;
+  padding: .3rem;
+}
+.mm-main .product-bijia .pro-img {
+  position: relative;
+  height: 3.4rem;
+}
+.mm-main .product-bijia .pro-img .p-img {
+  display: block;
+  height: 3.4rem;
+  width: 3.4rem;
+  margin: 0 auto;
+}
+.mm-main .product-bijia .pro-img .product-collect {
+  position: absolute;
+  right: .20rem;
+  bottom: .0rem;
+  height: .78rem;
+  width: .78rem;
+}
+.mm-main .rop-tab {
+  margin-top: .2rem;
+}
+.mm-main .rop-tab ul li a {
+  float: left;
+  height: .68rem;
+  width: 33.33%;
+  border: 1px solid maroon;
+  color: #fff;
+  font-size: .24rem;
+  text-align: center;
+  line-height: .68rem;
+  background: palevioletred;
+}
+.mm-main .pro-api {
+  padding-top: .3rem;
+  padding-left: 0;
+  width: 100%;
+}
+.mm-main .pro-api table {
+  text-align: left;
+}
+.mm-main .pro-api img {
+  height: .93rem;
+  width: .93rem;
+  vertical-align: middle;
+}
+.mm-main .pro-api .p_pic {
+  text-align: left;
+  width: .93rem;
+}
+.mm-main .api-note {
+  height: 1.04rem;
+  padding: .2rem;
+  margin-top: .3rem;
+  border-top: 1px solid #ccc;
+  border-bottom: .03rem solid #666;
+}
+.mm-main .api-note p {
+  font-size: .24rem;
+  color: #666;
+  text-align: left;
+}
+.mm-main .pro-note .note-title {
+  height: .7rem;
+  text-align: center;
+  line-height: .7rem;
+  background-image: linear-gradient(to bottom, #eee, #ddd);
+}
+.mm-main .pro-note .note-title p {
+  font-size: .3rem;
+  color: #666;
+}
+.mm-main .pro-note .note-conter ul li {
+  padding: .2rem;
+  border-bottom: 2px solid #ccc;
+}
+.mm-main .pro-note .note-conter ul li .top {
+  height: .36rem;
+  font-size: .24rem;
+  color: #666;
+}
+.mm-main .pro-note .note-conter ul li .cener {
+  height: .36rem;
+  font-size: .2rem;
+  text-align: right;
+  margin-bottom: .1rem;
+  color: #666;
+}
+.mm-main .pro-note .note-conter ul li .bottom .note-content {
+  font-size: .2rem;
+}
+.mm-main .note-more {
+  margin-top: .2rem;
+}
+.mm-main .note-more p {
+  height: .64rem;
+  background-image: linear-gradient(to bottom, #eee, #ddd);
+  text-align: center;
+  line-height: .64rem;
+  font-size: .22rem;
+  border: 1px solid #ccc;
+  border-radius: .1rem;
+}

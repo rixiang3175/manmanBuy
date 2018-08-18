@@ -1,0 +1,140 @@
+body {
+  font-size: 16px;
+}
+.mm-layout {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  width: 100%;
+  /*底部*/
+}
+.mm-layout .mm-head {
+  overflow: hidden;
+  height: 1rem;
+  line-height: 1rem;
+  width: 100%;
+  background: palevioletred;
+  padding-top: .13rem;
+}
+.mm-layout .mm-head .logo {
+  overflow: hidden;
+  height: 1rem;
+  padding-left: .20rem;
+}
+.mm-layout .mm-head .logo img {
+  width: 70%;
+}
+.mm-layout .mm-head .app {
+  height: 1rem;
+  width: 1rem;
+}
+.mm-layout .mm-head .app img {
+  height: 68%;
+  width: 68%;
+}
+.mm-layout .search {
+  height: 1rem;
+  padding: .2rem;
+}
+.mm-layout .search input {
+  height: .6rem;
+  background: #eee;
+  border-radius: .3rem;
+  font-size: .16rem;
+  line-height: .6rem;
+}
+.mm-layout .search input:first-child {
+  width: 4.6rem;
+  padding-left: .2rem;
+}
+.mm-layout .search input:last-child {
+  width: 1.26rem;
+  background: palevioletred;
+  text-align: center;
+  color: #fff;
+}
+.mm-layout .section-line {
+  height: .2rem;
+  width: 100%;
+  background: #eee;
+}
+.mm-layout .mm-footer {
+  margin: .3rem;
+  background: #eee;
+  width: 100%;
+  margin-left: 0;
+}
+.mm-layout .mm-footer .login {
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.mm-layout .mm-footer .login a {
+  float: left;
+  width: 33.33%;
+  height: .66rem;
+  text-align: center;
+  line-height: .66rem;
+  padding: 0;
+}
+.mm-layout .mm-footer .login a:nth-child(2) {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.mm-layout .mm-footer .login .j-top img {
+  width: .3rem;
+  height: .3rem;
+  margin-top: .18rem;
+  margin-right: .2rem;
+}
+.mm-layout .mm-footer .link {
+  text-align: center;
+  padding: .3rem 0;
+  font-size: .28rem;
+}
+.mm-layout .mm-footer .link .link-app {
+  color: red;
+}
+.mm-layout .mm-footer .link .link-phone {
+  color: #999;
+}
+.mm-layout .mm-footer .link .link-com {
+  font-size: .24rem;
+  line-height: .24rem;
+}
+.mm-layout .mm-head {
+  padding: 0;
+  position: relative;
+}
+.mm-layout .mm-head .back-icon::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: .25rem;
+  top: .25rem;
+  width: .4rem;
+  height: .4rem;
+  border-top: .03rem solid #fff;
+  border-left: .03rem solid #fff;
+  transform: rotate(-45deg);
+}
+.mm-layout .mm-head .go-back {
+  height: 100%;
+  width: .88rem;
+}
+.mm-layout .mm-head .go-back a {
+  display: block;
+  height: 1rem;
+}
+.mm-layout .mm-head h1 {
+  overflow: hidden;
+  font-size: .3rem;
+  text-align: center;
+  color: #fff;
+}
+.mm-layout .mm-head .app {
+  margin-top: .14rem;
+}

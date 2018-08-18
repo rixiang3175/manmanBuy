@@ -1,0 +1,135 @@
+.mm-head .logo img {
+  margin-top: .25rem;
+}
+.mm-main {
+  /*销量*/
+  /*评论*/
+}
+.mm-main .tle-nav {
+  height: .76rem;
+  background-image: linear-gradient(to bottom, #ddd, #eee);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  line-height: .76rem;
+  font-size: .28rem;
+  padding-left: .15rem;
+}
+.mm-main .hot p {
+  font-weight: bold;
+  line-height: .78rem;
+  height: .78rem;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  padding-left: .2rem;
+  font-size: .26rem;
+  color: palevioletred;
+  background-image: linear-gradient(to bottom, #ddd, #eee);
+}
+.mm-main .t-category ul li {
+  padding: .2rem;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.mm-main .t-category ul li::after {
+  content: '';
+  position: absolute;
+  right: .2rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  height: .2rem;
+  width: .2rem;
+  border-top: .04rem solid #ccc;
+  border-right: .04rem solid #ccc;
+}
+.mm-main .t-category ul li .left {
+  height: .4rem;
+  width: .4rem;
+  background: #ccc;
+  text-align: center;
+  line-height: .4rem;
+  font-size: .28rem;
+  color: #fff;
+  margin-right: .2rem;
+}
+.mm-main .t-category ul li .right {
+  overflow: hidden;
+}
+.mm-main .t-category ul li .right p {
+  font-size: .28rem;
+  color: #000;
+}
+.mm-main .t-category ul li .right .num {
+  color: #999;
+  padding-top: .1rem;
+}
+.mm-main .t-category ul li:nth-child(1) .left {
+  background: red;
+}
+.mm-main .t-category ul li:nth-child(2) .left {
+  background: green;
+}
+.mm-main .t-category ul li:nth-child(3) .left {
+  background: blue;
+}
+.mm-main .brand-num ul li {
+  padding: .2rem;
+  border-bottom: 1px solid #ccc;
+}
+.mm-main .brand-num ul li .brand-img {
+  margin-right: .15rem;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+.mm-main .brand-num ul li .brand-img img {
+  height: 90%;
+  width: 100%;
+  vertical-align: middle;
+}
+.mm-main .brand-num ul li .brand-info {
+  overflow: hidden;
+}
+.mm-main .brand-num ul li .brand-info .des {
+  font-size: .26rem;
+  overflow: hidden;
+}
+.mm-main .brand-num ul li .brand-info .price {
+  font-size: .26rem;
+  color: orangered;
+  margin: .1rem 0;
+}
+.mm-main .brand-num ul li .brand-info .com {
+  font-size: .24rem;
+  color: #999;
+}
+.mm-main .comment .top {
+  height: 2rem;
+  padding: .2rem;
+}
+.mm-main .comment .top .left {
+  text-align: center;
+  height: 2rem;
+  width: 2rem;
+}
+.mm-main .comment .top .right1 {
+  overflow: hidden;
+}
+.mm-main .comment .top .right1 p {
+  font-size: .26rem;
+  margin-top: .4rem;
+  color: #999;
+}
+.mm-main .comment .bottom {
+  padding: .2rem;
+  border: 1px solid #ccc;
+}
+.mm-main .comment .bottom .comm {
+  font-size: .22rem;
+  overflow: hidden;
+  color: #999;
+}
+.mm-main .comment .bottom .comm .name {
+  color: purple;
+}
+.mm-main .comment .bottom .info p {
+  font-size: .24rem;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>首页</title>
+</head>
+
+<body>
+  <div class="mm-layout">
+    <!-- 头部 -->
+    <div class="mm-head">
+      <div class="app fr">
+        <img src="./images/header_app.png" alt="">
+      </div>
+      <div class="logo">
+        <img src="./images/header_logo.png" alt="">
+      </div>
+    </div>
+
+    <!-- 主体 -->
+    <div class="mm-main">
+      <!-- 搜索 -->
+      <div class="search">
+        <input type="search" placeholder="请输入你想比价的商品">
+        <input type="buttom" value="搜索">
+      </div>
+      <div class="section-line">
+
+      </div>
+
+      <!-- 导航 -->
+      <div class="mm-nav">
+        <ul>
+         <!-- 坑 -->
+        </ul>
+      </div>
+        <!-- 超级推荐 -->
+      <div class="recommend">
+        <span>超级折扣推荐</span>
+        <img src="http://www.zuyushop.com/wap/images/more.png" alt="" class="fr">
+      </div>
+
+      <!-- 产品列表 -->
+      <div class="pro-item">
+        <ul>
+          <!-- 坑 -->
+        </ul>
+      </div>
+
+      <!-- 更多 -->
+      <div class="item-more">
+        <a href="moneyctr">更多优惠信息>></a>
+      </div>
+
+      <!-- 品牌排行 -->
+      <div class="recommend">
+          <span>品牌排行</span>
+          <img src="http://www.zuyushop.com/wap/images/more.png" alt="" class="fr">
+        </div>
+    </div>
+     
+    <!-- 底部 -->
+    <div class="mm-footer">
+      <div class="login">
+          <a href="javascript:;">登录</a>
+          <a href="javascript:;">注册</a>
+          <a href="#" class="j-top"> <img src="./images/top.jpg" alt=""> 返回头部</a>
+      </div>
+      <div class="link">
+        <a href="javascript:;" class="link-app">手机App下载</a>
+        <a href="index.html" class="link-phone">慢慢买手机版</a>
+        <a href="javascript:;"> --掌上比价平台</a>
+        <p class="link-com">m.manmanbuy.com</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/rem.js"></script>
+  <script src="./js/index.js"></script>
+  <!-- 导航渲染 -->
+  <script type="text/html" id="navTmp">
+    {{ each result v i}}
+      <li>
+        <a href="{{v.titlehref}}">
+          {{@v.img}}
+          <p>{{v.name}}</p>
+        </a>
+      </li>
+    {{ /each}}
+  </script>
+<!-- 渲染商品 -->
+  <script type="text/html" id="indTmp">
+      {{ each result v i }}
+      <li>
+          <a href="moneypro.html?prductId={{v.productId}}">
+            {{@v.productImg2}}
+            <div class="item-info fr">
+              <p>{{v.productName}}
+                <span class="price">{{v.productPinkage}}</span>
+              </p>
+              <span class="pro-name">{{v.productFrom}} | </span><span class="time">{{v.productTime}}</span>
+              <span class="fr num">{{v.productComCount.replace('有','').replace('人评论','')}}</span>
+            </div>
+          </a>
+        </li>
+      {{ /each}}
+      
+  </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/moneyctrl.css">
+  <title>省钱控</title>
+</head>
+
+<body>
+  <div class="mm-layout">
+    <!-- 头部 -->
+    <div class="mm-head clearfix">
+      <div class="go-back fl">
+        <a class="back-icon" href="index.html"></a> 
+      </div>   
+      <div class="app fr">
+        <img src="./images/header_app.png" alt="">
+      </div>
+      <h1>省钱控--最新优惠</h1>
+    </div>
+
+    <!-- 主体 -->
+    <div class="mm-main">
+      <!-- 产品列表 -->
+      <div class="pro-item">
+        <ul>
+          <!-- 坑 -->
+        </ul>
+      </div>
+      <div class="pro-page">
+        <span class="prev"><a href="javascript:;">上一页</a></span>
+        <span>
+          <select>
+            <!-- <option selected="selected" value="1">1 / 3</option> -->
+          </select>
+        </span>
+        <span class="next"><a href="javascript:;">下一页</a></span>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <div class="mm-footer">
+      <div class="login">
+          <a href="javascript:;">登录</a>
+          <a href="javascript:;">注册</a>
+          <a href="#" class="j-top"> <img src="./images/top.jpg" alt=""> 返回头部</a>
+      </div>
+      <div class="link">
+        <a href="javascript:;" class="link-app">手机App下载</a>
+        <a href="index.html" class="link-phone">慢慢买手机版</a>
+        <a href="javascript:;"> --掌上比价平台</a>
+        <p class="link-com">m.manmanbuy.com</p>
+      </div>
+    </div>
+
+
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/rem.js"></script>
+  <script src="./js/moneyctrl.js"></script>
+<!-- 渲染商品 -->
+  <script type="text/html" id="indTmp">
+      {{ each result v i }}
+      <li>
+          <a href="moneypro.html?prductId={{v.productId}}">
+            {{@v.productImg2}}
+            <div class="item-info fr">
+              <p>{{v.productName}}
+                <span class="price">{{v.productPinkage}}</span>
+              </p>
+              <span class="pro-name">{{v.productFrom}} | </span><span class="time">{{v.productTime}}</span>
+              <span class="fr num">{{v.productComCount.replace('有','').replace('人评论','')}}</span>
+            </div>
+          </a>
+        </li>
+      {{ /each}}
+  </script>
+
+  <!-- 渲染分页 -->
+  <script type="text/html" id="pageTmp">
+     <%
+     for (var i = 1; i <= pageTotal; i++){
+     %>
+       <option value="{{i}}">{{ i }} / {{pageTotal}}</option>
+     <%
+     }
+     %>
+  </script>
+</body>
+</html>

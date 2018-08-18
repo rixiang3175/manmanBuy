@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/bijia.css">
+  <title>比价</title>
+</head>
+<body>
+  <div class="mm-layout">
+    <!-- 头部 -->
+    <div class="mm-head">
+      <div class="app fr">
+        <img src="./images/header_app.png" alt="">
+      </div>
+      <div class="logo">
+        <img src="./images/header_logo.png" alt="">
+      </div>
+    </div>
+      <!-- 搜索 -->
+      <div class="search">
+        <input type="search" placeholder="请输入你想比价的商品">
+        <input type="buttom" value="搜索">
+      </div>
+      <!-- 主体 -->
+      <div class="mm-main">
+        
+        <!-- 商品详情 -->
+        <div class="product-bijia">
+            
+        </div>
+       
+      
+         
+      <!-- 商品评论 -->
+       <div class="pro-note">
+         <div class="note-title">
+           <p>网友评价</p>
+         </div>
+         <div class="note-conter">
+          
+           <ul>
+              <!-- 坑 -->
+           </ul>
+         </div>
+       </div>
+       <div class="note-more">
+         <p>查看更多评价</p>
+       </div>
+    </div>
+     
+     
+    <!-- 底部 -->
+    <div class="mm-footer">
+      <div class="login">
+          <a href="javascript:;">登录</a>
+          <a href="javascript:;">注册</a>
+          <a href="#" class="j-top"> <img src="./images/top.jpg" alt=""> 返回头部</a>
+      </div>
+      <div class="link">
+        <a href="javascript:;" class="link-app">手机App下载</a>
+        <a href="index.html" class="link-phone">慢慢买手机版</a>
+        <a href="javascript:;"> --掌上比价平台</a>
+        <p class="link-com">m.manmanbuy.com</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common/commmon.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/rem.js"></script>
+  <script src="./js/bijia.js"></script>
+   <script type="text/html" id="navTmp">
+      {{ each result v i}}
+      <div class="nav-list">
+          <a href="index.html">首页></a>
+          <a href="category.html">全部分类></a>
+          <a href="#">{{v.productName.slice(0,8)}} ></a>
+          <a href="#" class="fr select">筛选</a>
+         </div>
+      <div class="pro-dec">
+        <p>{{v.productName}}</p>
+      </div>
+      <div class="pro-img">
+         <img class="p-img" src="@v.productImg" alt="">
+        <div class="product-collect">
+          <img src="http://www.zuyushop.com/wap/images/sc.jpg" alt="">
+        </div>
+      </div>
+      
+      
+      <div class="rop-tab clearfix">
+          <ul>
+            <li><a href="#">比较购买</a></li>
+            <li><a href="#">商品参数</a></li>
+            <li><a href="#">评价(2322)</a></li>
+          </ul>
+        </div>
+      
+        <div class="pro-api">
+          <!-- <div class="api-left fl">
+              <img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt="">
+              <span class="shop-name">京东商城</span>
+          </div>
+          <div class="api-rihgt fr">
+              <a href="#" class="go-shop">去购物</a>
+           </div>
+          <div class="api-center">
+              <span class="pro-price">￥1199.00</span>
+          </div> -->
+          {{@v.bjShop}}
+        </div>
+
+        <div class="api-note">
+          <p>
+            实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+          </p>
+        </div>
+      {{ /each}}
+   </script>
+  <!-- 渲染评论 -->
+    <script type="text/html" id="noteTmp">
+       {{ each result v i}}
+       <li>
+          <div class="top clearfix">
+            <span class="user-name fl">{{v.comName}}</span>
+            <span class="note-time fr">{{v.comTime}}</span>
+          </div>
+          <div class="cener">
+             <p class="pro-adr">{{v.comFrom}}</p>
+          </div>
+          <div class="bottom">
+            <p class="note-content">{{v.comContent}}</p>
+          </div>
+          </a>
+        </li>
+       {{ /each}}
+    </script>
+</body>
+</html>

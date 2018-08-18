@@ -1,0 +1,91 @@
+.mm-layout .mm-head {
+  padding: 0;
+  position: relative;
+}
+.mm-layout .mm-head .back-icon::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: .25rem;
+  top: .25rem;
+  width: .4rem;
+  height: .4rem;
+  border-top: .03rem solid #fff;
+  border-left: .03rem solid #fff;
+  transform: rotate(-45deg);
+}
+.mm-layout .mm-head .go-back {
+  height: 100%;
+  width: .88rem;
+}
+.mm-layout .mm-head .go-back a {
+  display: block;
+  height: 1rem;
+}
+.mm-layout .mm-head h1 {
+  overflow: hidden;
+  font-size: .3rem;
+  text-align: center;
+  color: #fff;
+}
+.mm-layout .mm-head .app {
+  margin-top: .14rem;
+}
+.mm-layout .mm-main .pro-item ul li {
+  width: 100%;
+  padding: .2rem 0;
+  border-bottom: 1px solid #ccc;
+}
+.mm-layout .mm-main .pro-item ul li a {
+  display: block;
+}
+.mm-layout .mm-main .pro-item ul li a p {
+  margin-bottom: 1.3rem;
+}
+.mm-layout .mm-main .pro-item ul li a img {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+.mm-layout .mm-main .pro-item ul li a .item-info {
+  font-size: .2rem;
+  width: 4rem;
+  height: 2.2rem;
+}
+.mm-layout .mm-main .pro-item ul li a .item-info .price {
+  color: palevioletred;
+}
+.mm-layout .mm-main .pro-item ul li a .item-info .time,
+.mm-layout .mm-main .pro-item ul li a .item-info .pro-name {
+  color: #999;
+}
+.mm-layout .mm-main .pro-item ul li a .item-info .num {
+  color: #999;
+}
+.mm-layout .mm-main .pro-page {
+  margin-top: .15rem;
+  height: .66rem;
+}
+.mm-layout .mm-main .pro-page span {
+  float: left;
+  height: 100%;
+  width: 33.33%;
+  line-height: .66rem;
+  text-align: center;
+}
+.mm-layout .mm-main .pro-page span a {
+  float: left;
+  background: #eee;
+  border-radius: .03rem;
+  height: .66rem;
+  border-radius: .05rem;
+  width: 1.44rem;
+  font-size: .3rem;
+  margin-left: .4rem;
+}
+.mm-layout .mm-main .pro-page span select {
+  font-size: .28rem;
+  width: 1.5rem;
+  text-align: center;
+  height: .66rem;
+  padding: .18rem;
+}

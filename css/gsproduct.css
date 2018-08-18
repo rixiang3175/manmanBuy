@@ -1,0 +1,114 @@
+body {
+  background: #eee;
+}
+.mm-main {
+  /*二级菜单*/
+}
+.mm-main .nav {
+  position: relative;
+  height: .76rem;
+  background: palegoldenrod;
+}
+.mm-main .nav::after {
+  position: absolute;
+  right: 0;
+  top: 0.06rem;
+  content: '';
+  height: .70rem;
+  width: .70rem;
+  border-radius: 50%;
+  background: url(../images/bijia.png) no-repeat center center;
+  background-size: 100%;
+}
+.mm-main .nav::before {
+  position: absolute;
+  right: .67rem;
+  top: 0.06rem;
+  content: '';
+  height: .70rem;
+  width: .03rem;
+  border-left: .02rem solid #ccc;
+}
+.mm-main .nav ul li {
+  float: left;
+  height: .76rem;
+  line-height: .76rem;
+  padding: 0 .5rem;
+  text-align: center;
+  font-size: .24rem;
+  position: relative;
+}
+.mm-main .nav ul .link::after {
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0.13rem;
+  border: .15rem solid transparent;
+  border-top: .15rem solid #ccc;
+}
+.mm-main .child {
+  position: absolute;
+  left: 0;
+  top: 1.8rem;
+  width: 100%;
+  display: none;
+}
+.mm-main .child ul li {
+  height: .76rem;
+  background: #fff;
+  padding-left: .2rem;
+  border-bottom: 1px solid #ccc;
+  line-height: .76rem;
+  font-size: .26rem;
+}
+.mm-main .child ul li.current {
+  color: violet;
+}
+.mm-main .child.three {
+  color: violet;
+}
+.mm-main .content {
+  padding: .1rem .1rem;
+}
+.mm-main .content ul {
+  overflow: hidden;
+}
+.mm-main .content ul li {
+  float: left;
+  width: 48%;
+  background: #fff;
+  margin-bottom: .2rem;
+  margin-top: .1rem;
+  overflow: hidden;
+}
+.mm-main .content ul li img {
+  height: 3rem;
+  width: 2.5rem;
+}
+.mm-main .content ul li .name {
+  font-size: .22rem;
+  color: #000;
+  text-align: left;
+  height: .32rem;
+  overflow: hidden;
+  padding-bottom: .1rem;
+}
+.mm-main .content ul li p .price {
+  font-size: .26rem;
+  color: violet;
+  padding-top: .1rem;
+  line-height: .6rem;
+}
+.mm-main .content ul li p .pro {
+  font-size: .22rem;
+  color: #fff;
+  background: violet;
+  padding: .1rem;
+  border-radius: .05rem;
+  margin-right: .1rem;
+}
+.mm-main .content ul li:nth-child(2n) {
+  margin-left: .2rem;
+}

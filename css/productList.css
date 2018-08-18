@@ -1,0 +1,75 @@
+.mm-main .nav-list {
+  height: .76rem;
+  padding-left: .2rem;
+  background-image: linear-gradient(to bottom, #eee, #ddd);
+  font-size: .26rem;
+  line-height: .76rem;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.mm-main .nav-list .select {
+  margin-top: .03rem;
+  background: #ccc;
+  border-radius: .2rem;
+  display: block;
+  width: 1.2rem;
+  height: .68rem;
+  text-align: center;
+}
+.mm-main .product-list {
+  padding-left: .2rem;
+}
+.mm-main .product-list ul li {
+  height: 2.24rem;
+  width: 100%;
+  overflow: hidden;
+  padding: .2rem 0;
+  border-bottom: 1px solid #ccc;
+}
+.mm-main .product-list ul li a {
+  display: block;
+}
+.mm-main .product-list ul li a img {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+.mm-main .product-list ul li a .item-info1 {
+  font-size: .26rem;
+  overflow: hidden;
+  height: 100%;
+}
+.mm-main .product-list ul li a .item-info1 .price {
+  color: red;
+  margin: .03rem;
+}
+.mm-main .product-list ul li a .item-info1 span {
+  color: #ccc;
+}
+.mm-main .pro-page {
+  margin-top: .15rem;
+  height: .66rem;
+}
+.mm-main .pro-page span {
+  float: left;
+  height: 100%;
+  width: 33.33%;
+  line-height: .66rem;
+  text-align: center;
+}
+.mm-main .pro-page span a {
+  float: left;
+  background: #eee;
+  border-radius: .03rem;
+  height: .66rem;
+  border-radius: .05rem;
+  width: 1.44rem;
+  font-size: .3rem;
+  margin-left: .4rem;
+}
+.mm-main .pro-page span select {
+  font-size: .28rem;
+  width: 1.3rem;
+  text-align: center;
+  height: .66rem;
+  padding: .18rem;
+}

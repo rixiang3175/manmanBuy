@@ -1,0 +1,105 @@
+
+.mm-layout {
+  .mm-main {
+    .note {
+      p {
+        padding-top: .1rem;
+        padding-bottom: .2rem;
+        font-size: .22rem;
+        color: #666;
+        text-align: center;
+      }
+    }
+    .product-list {
+      position: relative;
+       ul {
+         li {
+           height: 2.18rem;
+           padding: .2rem;
+           border-bottom : 1px solid #ccc;
+          a {
+            width: 100%;
+            height: 100%;
+            .list-img {
+              margin-right : .2rem;
+               img {
+                height: 1.6rem;
+                width: 1.8rem;
+               }
+            }
+            .list-info {
+              
+              &::after {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                right: -0.2rem;
+                top: 50%;
+                width: .3rem;
+                height: .3rem;
+                border-top: .04rem solid #ccc;
+                border-left: .04rem solid #ccc;
+                transform: translateY(-50%) rotate(135deg);
+              }
+              overflow: hidden;
+              .pro-name {
+                font-size: .24rem;
+                color: #333;
+              }
+              .pro-price {
+                font-size: .24rem;
+                font-weight: bold;
+                padding-top: .1rem;
+              }
+              .pro-date {
+                padding-top: .2rem;
+                font-size: .22rem;
+                color: blueviolet;
+              }
+            }
+          }
+         }
+       }
+      
+    }
+  }
+}
+// body {
+//   position: relative;
+// }
+.model {
+  display: none;
+  height: 100%;
+  width: 6.4rem;
+  position: fixed;
+  top: 0;
+  // left:0;
+  background: rgba(0, 0, 0, .6);
+  z-index: 9999;
+    ul {
+      li {
+        position: absolute;
+        left: 50%;
+        top: 1rem;
+        transform: translate(-50%);
+        img{
+          height: 3.2rem;
+          width: 3.2rem;
+        }
+      }
+    }
+    .arr {
+      font-size: .6rem;
+      color: #fff;
+      .left {
+        position: absolute; 
+        left: .8rem;
+        top: 2.3rem;
+      }
+      .right {
+        position: absolute; 
+        right: .8rem;
+        top: 2.3rem;
+      }
+    }
+  }

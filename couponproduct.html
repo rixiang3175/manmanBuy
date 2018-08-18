@@ -1,0 +1,94 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/couponproduct.css">
+    <title>优惠券</title>
+  </head>
+  
+  <body>
+    <div class="mm-layout">
+      <!-- 头部 -->
+      <div class="mm-head clearfix">
+        <div class="go-back fl">
+          <a class="back-icon" href="index.html"></a>
+        </div>
+        <div class="app fr">
+          <img src="./images/header_app.png" alt="">
+        </div>
+        <h1>优惠券</h1>
+      </div>
+  
+      <!-- 主体 -->
+      <div class="mm-main">
+           <div class="note">
+             <p>--点餐前出示手机中的优惠券，即可享受优惠--</p>
+           </div>
+           <div class="product-list">
+              <ul class="clearfix">
+                  <!-- 导航坑 -->
+                 
+                </ul>
+           </div>
+       </div>
+      <!-- 底部 -->
+      <div class="mm-footer">
+        <div class="login">
+          <a href="javascript:;">登录</a>
+          <a href="javascript:;">注册</a>
+          <a href="#" class="j-top">
+            <img src="./images/top.jpg" alt=""> 返回头部</a>
+        </div>
+        <div class="link">
+          <a href="javascript:;" class="link-app">手机App下载</a>
+          <a href="index.html" class="link-phone">慢慢买手机版</a>
+          <a href="javascript:;"> --掌上比价平台</a>
+          <p class="link-com">m.manmanbuy.com</p>
+        </div>
+        <a href="#" class="fix"></a>
+      </div>
+
+        <!-- 模态框 -->
+        <!-- 轮播图 -->
+        <div class="model">
+            <ul>
+              <li>
+                <img src="http://d3.5ikfc.com/static/thumbs/1016/kfc-5ikfc-108_pc27.jpg" alt="">
+              </li>
+            </ul>
+            <div class="arr">
+              <span class="left"> < </span>
+              <span class="right"> > </span>
+            </div>
+        </div>
+
+      <script src="./js/jquery.min.js"></script>
+      <script src="./lib/artTemplate/template-web.js"></script>
+      <script src="js/common/Tools.js"></script>
+      <script src="js/common/Route.js"></script>
+      <script src="./js/common/commmon.js"></script>
+      <script src="js/rem.js"></script>
+      <script src="./js/couponproduct.js"></script>
+      <script type="text/html" id="tmp">
+          {{ each result v i}} 
+          <li>
+              <a href="#" data-index=" {{i}} ">
+                 <div class="list-img fl">
+                   {{@v.couponProductImg}}
+                 </div>
+                 <div class="list-info">
+                   <p class="pro-name">{{v.couponProductName}}</p>
+                   <p class="pro-price">{{v.couponProductPrice}}</p>
+                   <p class="pro-date">{{v.couponProductTime}}</p>
+                 </div>
+              </a>
+            </li>
+          {{ /each}}
+      </script>
+      <!-- 渲染模态框 -->
+  </body>
+  
+  </html>
+ 

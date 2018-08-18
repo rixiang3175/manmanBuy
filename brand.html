@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/brand.css">
+  <title>全部分类标题</title>
+</head>
+<body>
+  <div class="mm-layout">
+    <!-- 头部 -->
+    <div class="mm-head">
+      <div class="app fr">
+        <img src="./images/header_app.png" alt="">
+      </div>
+      <div class="logo">
+        <img src="./images/header_logo.png" alt="">
+      </div>
+    </div>
+      <!-- 搜索 -->
+      <div class="search">
+        <input type="search" placeholder="请输入你想比价的商品">
+        <input type="buttom" value="搜索">
+      </div>
+      <!-- 主体 -->
+      <div class="mm-main">
+        
+        <!-- 商品详情 -->
+          <div class="tle-nav">
+             <a href="index.html">首页 > </a>
+             <a href="category.html">全部分类 > </a>
+          </div>
+          <div class="hot">
+             <p class="c-name">平板电视哪个品牌好</p>
+          </div>
+          <!-- 分类 -->
+          <div class="t-category clearfix">
+            <ul>
+              <!-- keng -->
+            </ul>
+          </div>
+        
+        <!-- 产品销量 -->
+        <div class="hot">
+            <p class="c-num">平板电视销量排行</p>
+         </div>
+        <div class="brand-num">
+          <ul>
+            <!-- keng -->
+          </ul>
+        </div>
+
+
+       <!-- 产品评论 -->
+       <div class="hot">
+          <p class="c-com">平板电视新评论</p>
+       </div>
+         <div class="comment">
+          <!-- 坑 -->
+        </div>
+      </div>
+     
+     
+    <!-- 底部 -->
+    <div class="mm-footer">
+      <div class="login">
+          <a href="javascript:;">登录</a>
+          <a href="javascript:;">注册</a>
+          <a href="#" class="j-top"> <img src="./images/top.jpg" alt=""> 返回头部</a>
+      </div>
+      <div class="link">
+        <a href="javascript:;" class="link-app">手机App下载</a>
+        <a href="index.html" class="link-phone">慢慢买手机版</a>
+        <a href="javascript:;"> --掌上比价平台</a>
+        <p class="link-com">m.manmanbuy.com</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common/commmon.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/rem.js"></script>
+  <script src="./js/brand.js"></script>
+  <!-- 渲染品牌 -->
+  <script type="text/html" id="tmp1">
+     {{ each result v i}}
+      <li>
+        <a href="productlist.html">
+          <div class="left fl">
+            <span>{{i + 1}}</span>
+          </div>
+          <div class="right">
+            <p class="name">{{v.brandName}}</p>
+            <p class="num">{{v.brandInfo}}</p>
+          </div>
+        </a>
+    </li>
+     {{ /each}}
+  </script>
+  <!-- 渲染销量 -->
+  <script type="text/html" id="tmp2">
+     {{ each result v i}}
+      <li>
+          <a href="productlist.html" data-productId="{{v.productId}}">
+              <div class="brand-img fl">
+                {{@v.productImg}}
+              </div>
+              <div class="brand-info">
+                <p class="des">{{v.productName}}</p>
+                <p class="price">{{v.productPrice}}</p>
+                <p class="com">
+                  <span>{{v.productCom}}</span>
+                  <span>{{v.productQuote}}</span>
+                </p>
+              </div>
+          </a>
+        </li>
+     {{ /each}}
+  </script>
+  <!-- 渲染评论 -->
+  <script type="text/html" id="tmp3">
+      {{ each result v i}}
+        <div class="top">
+          <div class="left fl">
+            <img src="./images/bijia.png" alt="">
+          </div>
+          <div class="right1">
+            <p>乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视</p>
+          </div>
+        </div>
+        <div class="bottom">
+            <p class="comm">
+              <span class="name fl">{{v.comName}}</span>
+              <span class="time fr">{{v.comTime}}</span>
+            </p>
+            <div class="info">
+                <p>{{v.comContent}}</p>
+            </div>
+          </div>
+        
+      {{ /each}}
+  </script>
+</body>
+</html> 
